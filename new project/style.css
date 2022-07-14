@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&family=Poppins:ital,wght@0,100;1,100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-weight: 300;
+    color: #111;
+}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content p {
+    font-size: 1em;
+    color: #fff
+}
+
+.btn {
+    font-size: 1em;
+    color: #fff;
+    margin-top: 50px;
+    background-color: #ff0157;
+    text-transform: uppercase;
+    padding: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+.banner .content h2 {
+    font-size: 5em;
+    color: #fff
+}
+
+.btn:hover {
+    letter-spacing: 6px;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+body {
+    min-height: 1000px;
+}
+
+.logo span {
+    color: #ff0157;
+}
+
+header .navigations {
+    position: relative;
+    display: flex
+}
+
+header .navigations li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .sticky {
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05)
+}
+
+header .navigations li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+header .sticky .logo {
+    color: #111;
+}
+
+header .sticky.navigations li {
+    color: #111;
+}
+
+header .navigations li a:hover {
+    color: #ff0157;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    padding: 100px;
+}
+
+.row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+.title {
+    font-weight: 300;
+    color: #111;
+    font-size: 2em;
+}
+
+.title span {
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
